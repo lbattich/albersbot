@@ -1,0 +1,10 @@
+{
+  "name": "albersbot",
+  "description": "Joseph Albers Twitter bot",
+  "main": "bot.js",
+  "dependencies": {
+    "canvas": "2.6.1",
+    "dotenv": "^8.2.0",
+    "twit": "^2.2.11"
+  }
+}
