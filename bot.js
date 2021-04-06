@@ -1,14 +1,9 @@
-const config = require('./config');//imports keys
+const config = require('./config');
 const Twit = require('twit');
 const { createCanvas } = require("canvas");
 const fs = require("fs");
 
 const T = new Twit(config);
-
-// const sleepLoop = () => {
-//   makeTweet();
-//   setTimeout(sleepLoop, 60 * 60 * 1000);
-// };
 
 const newMasterpiece = (size) => {
   const canvas = createCanvas();
@@ -63,14 +58,13 @@ const newMasterpiece = (size) => {
   return canvas.toDataURL().replace(/^data:image\/png;base64,/, "");
 };
 
-
 const sendTweet = (image, newNumber) => {
   T.post( "media/upload", { media_data: image }, (error, data, response) => {
       if (error) {
         console.error(error);
       }
       const params = {
-        status: `Homage to the Square ${newNumber}`,
+        status: `Homage to the Square No. ${newNumber}`,
         media_ids: data.media_id_string,
       };
 
@@ -82,9 +76,8 @@ const sendTweet = (image, newNumber) => {
         }
       });
     });
-};
 
-const makeTweet = () => {
+const tweet = () => {
   let newNumber;
   T.get("statuses/user_timeline", { screen_name: "AlbersBot", count: 1 }, (err, data, response) => {
     if (!err) {
@@ -95,8 +88,8 @@ const makeTweet = () => {
   }
   });
 }
-// Get random colour in hex
 
+// Get random colour in hex
 const hexify = (rgb) => {
   let hex = Number(rgb).toString(16);
   if (hex.length < 2) {
@@ -112,4 +105,4 @@ const getHex = () => {
   return red+green+blue;
 };
 
-// makeTweet();
+tweet();
