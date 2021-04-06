@@ -76,6 +76,7 @@ const sendTweet = (image, newNumber) => {
         }
       });
     });
+};
 
 const tweet = () => {
   let newNumber;
@@ -87,7 +88,7 @@ const tweet = () => {
     sendTweet( newMasterpiece(400), newNumber);
   }
   });
-}
+};
 
 // Get random colour in hex
 const hexify = (rgb) => {
