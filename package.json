@@ -1,9 +1,11 @@
 {
   "name": "albersbot",
+  "version": "1.0.0",
   "description": "Joseph Albers Twitter bot",
   "main": "bot.js",
+  "author": "Lucas Battich",
   "dependencies": {
-    "canvas": "2.6.1",
+    "canvas": "^2.6.1",
     "dotenv": "^8.2.0",
     "twit": "^2.2.11"
   }
