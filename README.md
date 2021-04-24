@@ -1,6 +1,6 @@
 # Joseph Albers bot 🤖🎨
 
-A Twitter bot that tweets a new generative art picture in the style of Joseph Albers and his *Homage to the Square* series.
+[@AlbersBot](https://twitter.com/AlbersBot) is a Twitter bot that tweets a new generative art picture in the style of Joseph Albers and his *Homage to the Square* series.
 
 This bot generates a Canvas picture with three or four squares, by choosing at random one of the four formats used by Albers, and filling each square with a random colour.
 
