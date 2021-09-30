@@ -1,6 +1,6 @@
-# Joseph Albers bot 🤖🎨
+# Josef Albers bot 🤖🎨
 
-[@AlbersBot](https://twitter.com/AlbersBot) is a Twitter bot that tweets a new generative art picture in the style of Joseph Albers and his *Homage to the Square* series.
+[@AlbersBot](https://twitter.com/AlbersBot) is a Twitter bot that tweets a new generative art picture in the style of Josef Albers and his *Homage to the Square* series.
 
 This bot generates a Canvas picture with three or four squares, by choosing at random one of the four formats used by Albers, and filling each square with a random colour.
 
@@ -10,7 +10,7 @@ This bot generates a Canvas picture with three or four squares, by choosing at r
 
 ![](img/Albers_format.gif)
 
->"For me colour is the means of my idiom. It’s automatic." Joseph Albers, 1966
+>"For me colour is the means of my idiom. It’s automatic." Josef Albers, 1966
 
 # Usage
 
