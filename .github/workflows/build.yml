@@ -16,9 +16,10 @@ jobs:
           node-version: '12.x'
       - name: Run Bot
         uses: dephraiim/twitter-bot-action@v1.2.1
-        file_name: bot.js
         env:
           API_KEY: ${{ secrets.API_KEY }}
           API_SECRET_KEY: ${{ secrets.API_SECRET_KEY }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+        with:
+         file_name: "bot.js"
